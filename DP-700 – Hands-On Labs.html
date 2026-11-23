@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><title>DP-700 – Hands-On Labs</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"><style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#FAF7FF;--ink:#1A0533;--muted:#6B5780;--card:#fff;--line:rgba(139,47,201,.18);--violet:#8B2FC9;--pink:#DB2777;--cyan:#0891B2;--gold:#D97706;--green:#16A34A}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12031f;--ink:#fff;--muted:rgba(255,255,255,.65);--card:rgba(255,255,255,.06);--line:rgba(192,132,252,.25);--violet:#C084FC;--pink:#F472B6;--cyan:#22D3EE;--gold:#FCD34D;--green:#4ADE80}}
+:root[data-theme="dark"]{--bg:#12031f;--ink:#fff;--muted:rgba(255,255,255,.65);--card:rgba(255,255,255,.06);--line:rgba(192,132,252,.25);--violet:#C084FC;--pink:#F472B6;--cyan:#22D3EE;--gold:#FCD34D;--green:#4ADE80}
+*{box-sizing:border-box;margin:0}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+.hero{background:#1A0533 radial-gradient(ellipse 80% 70% at 65% 20%,rgba(139,47,201,.6),transparent 65%),radial-gradient(ellipse 50% 60% at 0 100%,rgba(34,211,238,.22),transparent 60%),radial-gradient(ellipse 40% 50% at 100% 100%,rgba(244,114,182,.28),transparent 60%);color:#fff;padding:72px 6vw 56px}
+.badge{display:inline-block;border:1px solid rgba(192,132,252,.5);background:rgba(139,47,201,.25);color:#C084FC;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:99px;margin-bottom:24px}
+h1{font-family:Syne,Impact,sans-serif;font-size:clamp(38px,7vw,78px);line-height:.95;letter-spacing:-2px}
+h1 span{background:linear-gradient(90deg,#C084FC,#F472B6,#22D3EE);-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
+.hero p{max-width:560px;color:rgba(255,255,255,.72);font-weight:300;font-size:18px;margin:22px 0 32px}
+.stats{display:flex;flex-wrap:wrap;gap:12px}.stats div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:12px 22px}
+.stats b{display:block;font-family:Syne,sans-serif;font-size:28px}.stats small{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.55)}
+section{padding:56px 6vw}.eyebrow{color:var(--violet);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:600}
+h2{font-family:Syne,sans-serif;font-size:clamp(28px,4vw,44px);letter-spacing:-1px;margin:6px 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--c,var(--violet));border-radius:16px;padding:22px}
+.card .ic{font-size:30px}.card h3{font-family:Syne,sans-serif;font-size:19px;margin:8px 0 6px}.card p{color:var(--muted);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.chips i{font-style:normal;font-size:12px;padding:4px 11px;border-radius:99px;border:1px solid var(--c,var(--violet));color:var(--c,var(--violet))}
+.band{background:linear-gradient(135deg,#2D0F4E,#8B2FC9 60%,#F472B6);color:#fff;text-align:center;padding:48px 6vw}.band h2{margin-bottom:8px}
+@media(prefers-reduced-motion:no-preference){.card{transition:transform .2s}.card:hover{transform:translateY(-4px)}}
+</style></head><body>
+<div class="hero"><span class="badge">Lab-First Learning</span><h1>Microsoft Fabric<span>Hands-On Labs</span></h1><p>Thirteen guided labs in a live Fabric environment. You don’t just learn concepts, you build, run and validate real solutions.</p>
+<div class="stats"><div><b>13</b><small>Labs</small></div><div><b>5</b><small>Skill areas</small></div><div><b>100%</b><small>Browser-based</small></div></div></div>
+<section><div id="g"></div></section>
+<div class="band"><h2>Build it. Break it. Master it.</h2><p>Each lab maps directly to a DP-700 exam domain.</p></div>
+<script>
+const G=[['Lakehouse and Spark','#8B2FC9',[['Create a Microsoft Fabric Lakehouse','🏠',['Workspace','Upload CSV','Delta tables','SQL endpoint']],['Analyze Data with Apache Spark','⚡',['Notebook','DataFrames','Spark SQL','Charts']],['Use Delta Tables in Apache Spark','Δ',['Managed/external','Time travel','Streaming']]]],
+['Data Integration','#DB2777',[['Ingest Data with a Pipeline','🔀',['Copy Data','Notebook activity','Monitor']],['Use Dataflows Gen2 to Ingest Data','🔄',['Power Query','Transform','Destination']],['Create a Medallion Architecture','🥇',['Bronze','Silver','Gold','Semantic model']]]],
+['Data Warehousing','#0891B2',[['Analyze Data in a Data Warehouse','🏛️',['Star schema','T-SQL','Views','Visual query']],['Load Data into a Warehouse Using T-SQL','📥',['Cross-database','Stored procs','Incremental load']]]],
+['Real-Time Intelligence','#D97706',[['Get Started with Real-Time Intelligence','📡',['Eventhouse','Eventstream','Dashboard','Alerts']],['Ingest Real-Time Data with Eventstream','🌊',['Live source','Group By','KQL destination']],['Query Data in a KQL Database','🔍',['Queryset','Functions','Materialized views']]]],
+['Monitoring and Security','#16A34A',[['Monitor a Microsoft Fabric Lakehouse','📊',['Spark jobs','Monitoring hub','Run history']],['Secure Data Access in Microsoft Fabric','🔒',['Roles','Item permissions','RLS','CLS']]]]];
+const h=(a,f)=>a.map(f).join('');
+document.getElementById('g').innerHTML=h(G,g=>'<p class="eyebrow" style="color:'+g[1]+'">'+g[0]+'</p><h2 style="font-size:26px;margin-bottom:16px">'+g[0]+'</h2><div class="grid" style="margin-bottom:36px">'+h(g[2],l=>'<div class="card" style="--c:'+g[1]+'"><div class="ic">'+l[1]+'</div><h3>'+l[0]+'</h3><div class="chips">'+h(l[2],s=>'<i>'+s+'</i>')+'</div></div>')+'</div>');
+</script></body></html>
