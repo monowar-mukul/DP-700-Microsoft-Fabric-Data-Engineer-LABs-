@@ -4,7 +4,7 @@
 
 Master data engineering, real-time analytics and governance on one unified platform, and walk into the DP-700 exam with confidence.
 
-- **13** hands-on labs
+- **14 +** hands-on labs
 - **10** theory modules
 - **7+** Fabric workloads
 - **DP-700** exam ready
